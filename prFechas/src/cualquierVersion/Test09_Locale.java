@@ -14,7 +14,7 @@ public class Test09_Locale {
 		Locale locPT = new Locale("pt"); // Portugal
 		Locale locBR = new Locale("pt", "BR"); // Brazil
 		Locale locIN = new Locale("hi", "IN"); // India
-		Locale locMEX = new Locale("es", "MX"); // M�xico
+		Locale locMEX = new Locale("es", "MX"); // México
 		Locale locEN = new Locale("en","EN"); // Reino Unido
 				
 		// En lugar de crear el objeto Locale, que ya ha quedado obsoleto, es mejor

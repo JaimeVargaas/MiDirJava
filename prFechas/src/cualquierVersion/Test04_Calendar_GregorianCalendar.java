@@ -53,9 +53,9 @@ public class Test04_Calendar_GregorianCalendar {
 		// ----------------------------------------------------------
 		// Calcular cuando fue nuestro cumpleaños en el año 2020
 		// ----------------------------------------------------------
-		Calendar fecCumple = new GregorianCalendar(2020,9,17);
+		Calendar fecCumple = new GregorianCalendar(2025,7,1);
 		int diaCumple = fecCumple.get(Calendar.DAY_OF_WEEK);
-		System.out.println("\nMi cumple en 2020 fue: "+
+		System.out.println("\nMi cumple en 2025 fue: "+
 								fecCumple.get(Calendar.DAY_OF_WEEK)); 	
 					// Día 1 es Sunday (Domingo)
 		
