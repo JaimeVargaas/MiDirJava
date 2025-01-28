@@ -41,6 +41,15 @@ public class ejemplo1 {
 		for(Iterator<Object> it2=miColeccion.iterator();it2.hasNext();) {
 			System.out.println(it2.next());
 		}
+		
+		// Otra forma de recorrer la coleccion
+		Object elem;
+		for(Iterator<Object> it2=miColeccion.iterator();it2.hasNext();) {
+			elem=it2.next();
+			if(elem instanceof Integer)
+				it2.remove();
+			}
+
 
 	}	
 
