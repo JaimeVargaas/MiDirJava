@@ -49,6 +49,8 @@ public class ejemplo1 {
 			if(elem instanceof Integer)
 				it2.remove();
 			}
+		
+		
 
 
 	}	
