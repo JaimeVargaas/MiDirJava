@@ -29,7 +29,7 @@ public class TestEnumColor {
 		System.out.println(miColor);
 		}
 		catch(IllegalArgumentException e) {
-			System.out.println("Color inex istente");
+			System.out.println("Color inexistente");
 		}
 	}
 
