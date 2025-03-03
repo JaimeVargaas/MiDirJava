@@ -50,6 +50,9 @@ public class Usuario implements InterfazUsuario{
 			 if(lib.getTitulo().equals(tit))
 				res = lib;
 		 }
+		
+		lista.remove(res);
+		
 		return res;
 	}
 	@Override

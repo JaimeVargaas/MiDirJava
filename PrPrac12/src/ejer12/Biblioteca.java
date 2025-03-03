@@ -77,7 +77,15 @@ public class Biblioteca implements InterfazBiblioteca {
 	@Override
 	public boolean devolverLibro(String titulo, String nombre) {
 		Usuario usu = this.buscarUsuario(nombre);
-		Libro lib = this.altaLibro();
+		if(usu==null)
+			return false;
+				
+		Libro lib = usu.devuelveLibro(titulo);
+		if (lib==null)
+			return false;
+		
+		return true;
+		
 	}
 
 	@Override
@@ -87,19 +95,34 @@ public class Biblioteca implements InterfazBiblioteca {
 
 	@Override
 	public String librosPrestadosUsuario(String nombre) {
-		return "";
+		Usuario usu = this.buscarUsuario(nombre);
+		if (usu == null)
+			return null;
+		
+		return usu.toString();
+		
 	}
 
 	@Override
 	public SortedSet<Libro> copias(String titulo) {
-		// TODO Auto-generated method stub
-		return null;
+		SortedSet<Libro> copias = new TreeSet<Libro>();
+		copias.addAll(libro);
+		
+		for(Libro lib : copias) {
+			if(!lib.getTitulo().equals(titulo))
+				copias.remove(lib);
+		}
+		
+		return copias;
 	}
 
 	@Override
 	public Set<Libro> getLibrosUsuario(String nomCli) {
-		// TODO Auto-generated method stub
-		return null;
+		Usuario usu = this.buscarUsuario(nomCli);
+		if (usu == null)
+			return null;
+		
+		return usu.getLista();
 	}
 	
 }
