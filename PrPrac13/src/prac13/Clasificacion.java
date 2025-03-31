@@ -13,11 +13,11 @@ public class Clasificacion {
 		
 	}
 	
-	private boolean anadirEquipo(Equipo e) {
+	public boolean anadirEquipo(Equipo e) {
 		return this.equipos.add(e);
 	}
 	
-	private void anadirPartido(Partido p) {
+	public void anadirPartido(Partido p) {
 		Equipo local = buscarEquipo(p.getNombre1());
 		Equipo visitante = buscarEquipo(p.getNombre2());
 		

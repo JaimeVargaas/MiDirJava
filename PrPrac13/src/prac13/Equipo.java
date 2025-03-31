@@ -62,7 +62,7 @@ public class Equipo {
 	}
 	
 	public static boolean comparaNombreClase(String nom1, String nom2){
-        if (nom1 == nom2) {
+        if (nom1.equals(nom2)) {
             return true;
         }
         return false;

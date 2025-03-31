@@ -12,8 +12,7 @@ public class test {
 		personajes1.add("Dulcinea del Toboso");
 		personajes1.add("Rocinante");
 		
-		Libro libro1 = new Libro("0001","Don Quijote de la Mancha","Miguel de Cervantes Saavedra",
-		personajes1);
+		Libro libro1 = new Libro("0001","Don Quijote de la Mancha","Miguel de Cervantes Saavedra",personajes1);
 		
 		/*List<String> personajes2 = new LinkedList<String>();
 		personajes2.add("Aliena");
@@ -36,7 +35,7 @@ public class test {
 		Libro libro7 = new Libro("0007","El principito","Antoine de Saint-Exupary",
 		Arrays.asList("The Little Prince","El vanidoso","Le renard"));
 		
-		System.out.println(libro6.toString());
+		System.out.println(libro1.toString());
 	}
 
 }
