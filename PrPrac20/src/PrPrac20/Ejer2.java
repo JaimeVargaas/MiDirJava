@@ -96,19 +96,16 @@ public class Ejer2 extends JFrame{
 		
 		
 		// Evento de activacion pinturas metalizadas
-		cb5.addItemListener(new ItemListener() {
-			
-			@Override
-			public void itemStateChanged(ItemEvent e) {
+		cb5.addItemListener(
+			(e) -> {
 				if (cb5.isSelected())
 					lista.setEnabled(true);
 				else {
 					lista.setEnabled(false);
 					inf.setText("                                Información");
 				}
-				
 			}
-		});
+		);
 		
 		// Evento de activacion de tapiceria de cuero
 		cb2.addItemListener(new ItemListener() {

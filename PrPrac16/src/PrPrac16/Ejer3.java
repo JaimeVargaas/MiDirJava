@@ -12,7 +12,10 @@ public class Ejer3 extends JFrame{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
+	
+	private double num;
+	private double total;
+	
 	public Ejer3() {
 
 	setTitle("Mi calculadora");
@@ -173,6 +176,8 @@ public class Ejer3 extends JFrame{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
+			num = Double.parseDouble(res.getText());
+			total += num;
 			res.setText(res.getText()+" + ");
 		}
 	});
@@ -213,12 +218,7 @@ public class Ejer3 extends JFrame{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
-
-			
-			String res1 = res.getText();
-			double res2 = Double.parseDouble(res1);
-			String res3 = String.valueOf(res2);
-			res.setText(res3);
+			res.setText();
 		}
 	});
 	

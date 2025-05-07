@@ -1,0 +1,6 @@
+Esto es una prueba de archivo de texto
+segunda linea
+Fin del archivo
+Línea añadida2
+Línea añadida2
+Fin

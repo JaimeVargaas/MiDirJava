@@ -24,6 +24,8 @@ public class Ejer1 extends JFrame{
 			public void keyTyped(KeyEvent e) {
 				char tecla = e.getKeyChar(); 
 				etiqueta.setText(etiqueta.getText()+tecla);
+				
+				if(e.getKeyChar()=='*') System.exit(0);
 			}
 			
 			@Override
